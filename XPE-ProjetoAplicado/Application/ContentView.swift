@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Salvos", systemImage: "book")
                 }
-        }.tint(.orange)
+        }.tint(.green)
     }
 }
 
