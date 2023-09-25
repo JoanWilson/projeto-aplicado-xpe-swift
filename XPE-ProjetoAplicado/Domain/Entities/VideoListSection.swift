@@ -14,14 +14,21 @@ struct VideoListSection: Identifiable {
     
     static func mockArray() -> [VideoListSection] {
         [
-            .init(sectionTitle: "Economia Doméstica", cells: []),
-            .init(sectionTitle: "Investimentos", cells: []),
-            .init(sectionTitle: "Dívidas", cells: [])
+            .init(sectionTitle: "Fundamentos Básicos", cells: [
+                .init(imageName: "Fundamentos", title: "Reserva", subTitle: "Como criar a sua reserva de emergência?"),
+                .init(imageName: "Fundamentos", title: "Reserva", subTitle: "Como criar a sua reserva de emergência?"),
+                .init(imageName: "Fundamentos", title: "Reserva", subTitle: "Como criar a sua reserva de emergência?"),
+            ]),
+            .init(sectionTitle: "Planejamento Pessoal", cells: [
+                .init(imageName: "Pessoal", title: "Objetivos pessoais", subTitle: "Vai fazer faculdade? Financiar uma casa?"),
+                .init(imageName: "Pessoal", title: "Objetivos pessoais", subTitle: "Vai fazer faculdade? Financiar uma casa?"),
+                .init(imageName: "Pessoal", title: "Objetivos pessoais", subTitle: "Vai fazer faculdade? Financiar uma casa?"),
+            ]),
+            .init(sectionTitle: "Montando minha carteira", cells: [
+                .init(imageName: "Carteira", title: "Tesouro Direto", subTitle: "Aprendar a investir no tesouro direto"),
+                .init(imageName: "Carteira", title: "Tesouro Direto", subTitle: "Aprendar a investir no tesouro direto"),
+                .init(imageName: "Carteira", title: "Tesouro Direto", subTitle: "Aprendar a investir no tesouro direto"),
+            ])
         ]
     }
-}
-
-struct VideoCellModel {
-    var title: String
-    var subTitle: String
 }

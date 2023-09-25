@@ -21,6 +21,8 @@
 		859EE0122AC1FE2100F2F1C9 /* VideosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */; };
 		859EE01A2AC2009600F2F1C9 /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0192AC2009600F2F1C9 /* VideoListCell.swift */; };
 		859EE01C2AC20C5B00F2F1C9 /* VideoListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE01B2AC20C5B00F2F1C9 /* VideoListSection.swift */; };
+		859EE0202AC20F1600F2F1C9 /* VideoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE01F2AC20F1600F2F1C9 /* VideoCellModel.swift */; };
+		859EE0232AC2102800F2F1C9 /* SavedVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0222AC2102800F2F1C9 /* SavedVideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUseCase.swift; sourceTree = "<group>"; };
 		859EE0192AC2009600F2F1C9 /* VideoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCell.swift; sourceTree = "<group>"; };
 		859EE01B2AC20C5B00F2F1C9 /* VideoListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListSection.swift; sourceTree = "<group>"; };
+		859EE01F2AC20F1600F2F1C9 /* VideoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellModel.swift; sourceTree = "<group>"; };
+		859EE0222AC2102800F2F1C9 /* SavedVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 		859EE0062AC1FD1900F2F1C9 /* SavedVideos */ = {
 			isa = PBXGroup;
 			children = (
+				859EE0212AC20FFC00F2F1C9 /* Components */,
 				859EE00B2AC1FD5100F2F1C9 /* SavedVideosView.swift */,
 				859EE00D2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift */,
 			);
@@ -217,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				859EE01B2AC20C5B00F2F1C9 /* VideoListSection.swift */,
+				859EE01F2AC20F1600F2F1C9 /* VideoCellModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -232,6 +238,14 @@
 			isa = PBXGroup;
 			children = (
 				859EE0192AC2009600F2F1C9 /* VideoListCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		859EE0212AC20FFC00F2F1C9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				859EE0222AC2102800F2F1C9 /* SavedVideoCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -369,7 +383,9 @@
 				859EE0082AC1FD3900F2F1C9 /* HomeView.swift in Sources */,
 				859EE01C2AC20C5B00F2F1C9 /* VideoListSection.swift in Sources */,
 				859EE01A2AC2009600F2F1C9 /* VideoListCell.swift in Sources */,
+				859EE0202AC20F1600F2F1C9 /* VideoCellModel.swift in Sources */,
 				859EE0122AC1FE2100F2F1C9 /* VideosUseCase.swift in Sources */,
+				859EE0232AC2102800F2F1C9 /* SavedVideoCell.swift in Sources */,
 				859EE00C2AC1FD5100F2F1C9 /* SavedVideosView.swift in Sources */,
 				859EE00E2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift in Sources */,
 				859EDFDB2AC1F5D400F2F1C9 /* ContentView.swift in Sources */,

@@ -17,8 +17,8 @@ struct HomeView: View {
                     Section(header: Text(index.sectionTitle)) {
                         ScrollView(.horizontal) {
                             HStack(spacing: 30) {
-                                ForEach(1...10, id: \.self) { _ in
-                                    VideoListCell()
+                                ForEach(index.cells) { cell in
+                                    VideoListCell(model: cell)
                                 }
                             }
                         }
@@ -27,8 +27,17 @@ struct HomeView: View {
             }
             .listStyle(.plain)
             .scrollIndicators(.hidden)
-            .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("")
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image("logoDark")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 60, height: 40, alignment: .leading)
+                }
+            }
+            
         }.searchable(text: $searchText)
     }
 }
