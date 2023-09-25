@@ -18,6 +18,7 @@
 		859EE00A2AC1FD4300F2F1C9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0092AC1FD4300F2F1C9 /* HomeViewModel.swift */; };
 		859EE00C2AC1FD5100F2F1C9 /* SavedVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE00B2AC1FD5100F2F1C9 /* SavedVideosView.swift */; };
 		859EE00E2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE00D2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift */; };
+		859EE0122AC1FE2100F2F1C9 /* VideosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		859EE0092AC1FD4300F2F1C9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		859EE00B2AC1FD5100F2F1C9 /* SavedVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVideosView.swift; sourceTree = "<group>"; };
 		859EE00D2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVideosViewModel.swift; sourceTree = "<group>"; };
+		859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +104,11 @@
 		859EDFD72AC1F5D400F2F1C9 /* XPE-ProjetoAplicado */ = {
 			isa = PBXGroup;
 			children = (
+				859EE0102AC1FDF900F2F1C9 /* Assets */,
+				859EE00F2AC1FDCE00F2F1C9 /* Application */,
 				859EE0042AC1FD0800F2F1C9 /* Domain */,
 				859EE0032AC1FD0400F2F1C9 /* Data */,
 				859EE0022AC1FCFE00F2F1C9 /* Presentation */,
-				859EDFD82AC1F5D400F2F1C9 /* XPE_ProjetoAplicadoApp.swift */,
-				859EDFDA2AC1F5D400F2F1C9 /* ContentView.swift */,
-				859EDFDC2AC1F5D500F2F1C9 /* Assets.xcassets */,
 				859EDFDE2AC1F5D500F2F1C9 /* Preview Content */,
 			);
 			path = "XPE-ProjetoAplicado";
@@ -150,6 +151,7 @@
 		859EE0032AC1FD0400F2F1C9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				859EE0152AC1FE7D00F2F1C9 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -157,6 +159,8 @@
 		859EE0042AC1FD0800F2F1C9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				859EE0142AC1FE7500F2F1C9 /* Entities */,
+				859EE0132AC1FE6E00F2F1C9 /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -177,6 +181,45 @@
 				859EE00D2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift */,
 			);
 			path = SavedVideos;
+			sourceTree = "<group>";
+		};
+		859EE00F2AC1FDCE00F2F1C9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				859EDFD82AC1F5D400F2F1C9 /* XPE_ProjetoAplicadoApp.swift */,
+				859EDFDA2AC1F5D400F2F1C9 /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		859EE0102AC1FDF900F2F1C9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				859EDFDC2AC1F5D500F2F1C9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		859EE0132AC1FE6E00F2F1C9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		859EE0142AC1FE7500F2F1C9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		859EE0152AC1FE7D00F2F1C9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				859EE0082AC1FD3900F2F1C9 /* HomeView.swift in Sources */,
+				859EE0122AC1FE2100F2F1C9 /* VideosUseCase.swift in Sources */,
 				859EE00C2AC1FD5100F2F1C9 /* SavedVideosView.swift in Sources */,
 				859EE00E2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift in Sources */,
 				859EDFDB2AC1F5D400F2F1C9 /* ContentView.swift in Sources */,
