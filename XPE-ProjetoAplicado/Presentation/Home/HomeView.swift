@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var searchText = ""
+    let mockArraySection: [VideoListSection] = VideoListSection.mockArray()
     var body: some View {
-        
-        let titlesList: [String] = [
-            "Economia Doméstica",
-            "Investimento",
-            "Resolução de dividas"
-        ]
-        
         NavigationStack {
             List {
-                ForEach(1...3, id: \.self) { index in
-                    Section(header: Text("Economia Domestica")) {
+                ForEach(mockArraySection) { index in
+                    Section(header: Text(index.sectionTitle)) {
                         ScrollView(.horizontal) {
                             HStack(spacing: 30) {
                                 ForEach(1...10, id: \.self) { _ in
@@ -32,7 +27,9 @@ struct HomeView: View {
             }
             .listStyle(.plain)
             .scrollIndicators(.hidden)
-        }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+        }.searchable(text: $searchText)
     }
 }
 
