@@ -9,7 +9,30 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        let titlesList: [String] = [
+            "Economia Doméstica",
+            "Investimento",
+            "Resolução de dividas"
+        ]
+        
+        NavigationStack {
+            List {
+                ForEach(1...3, id: \.self) { index in
+                    Section(header: Text("Economia Domestica")) {
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 30) {
+                                ForEach(1...10, id: \.self) { _ in
+                                    VideoListCell()
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .scrollIndicators(.hidden)
+        }
     }
 }
 

@@ -19,6 +19,7 @@
 		859EE00C2AC1FD5100F2F1C9 /* SavedVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE00B2AC1FD5100F2F1C9 /* SavedVideosView.swift */; };
 		859EE00E2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE00D2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift */; };
 		859EE0122AC1FE2100F2F1C9 /* VideosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */; };
+		859EE01A2AC2009600F2F1C9 /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859EE0192AC2009600F2F1C9 /* VideoListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		859EE00B2AC1FD5100F2F1C9 /* SavedVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVideosView.swift; sourceTree = "<group>"; };
 		859EE00D2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVideosViewModel.swift; sourceTree = "<group>"; };
 		859EE0112AC1FE2100F2F1C9 /* VideosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosUseCase.swift; sourceTree = "<group>"; };
+		859EE0192AC2009600F2F1C9 /* VideoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		859EE0052AC1FD0E00F2F1C9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				859EE0162AC2003E00F2F1C9 /* Components */,
 				859EE0072AC1FD3900F2F1C9 /* HomeView.swift */,
 				859EE0092AC1FD4300F2F1C9 /* HomeViewModel.swift */,
 			);
@@ -220,6 +223,14 @@
 			children = (
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		859EE0162AC2003E00F2F1C9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				859EE0192AC2009600F2F1C9 /* VideoListCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				859EE0082AC1FD3900F2F1C9 /* HomeView.swift in Sources */,
+				859EE01A2AC2009600F2F1C9 /* VideoListCell.swift in Sources */,
 				859EE0122AC1FE2100F2F1C9 /* VideosUseCase.swift in Sources */,
 				859EE00C2AC1FD5100F2F1C9 /* SavedVideosView.swift in Sources */,
 				859EE00E2AC1FD6100F2F1C9 /* SavedVideosViewModel.swift in Sources */,
